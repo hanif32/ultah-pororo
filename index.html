@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Pororo 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💖 Selamat Ulang Tahun, Adekkuuuuu! 💖</h1>
+        <p class="message">Aku sangat bersyukur bisa bersamamu. Semoga semua impianmu terwujud! 🥰</p>
+        <img src="images/ucapan.png" alt="Birthday" class="birthday-img">
+        
+        <!-- Tombol Kejutan -->
+        <button id="surpriseBtn" class="btn">Coba Buka 🎁</button>
+
+        <!-- Kejutan (Video) -->
+        <div id="surprise">
+            <h2>🎉 I Hope U Like It 🎉</h2>
+            <p>Terima kasih sudah menjadi bagian terbaik dalam hidupku ❤️</p>
+            <video id="surpriseVideo" controls>
+                <source src="images/our.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+            </video>
+            <button class="btn close-btn" onclick="hideSurprise()">Tutup 🎀</button>
+        </div>
+
+        <!-- Audio & Kontrol -->
+        <div class="audio-player">
+            <button id="playPauseBtn">▶</button>
+            <span id="currentTime">00:00</span> / 
+            <span id="duration">00:00</span>
+            <input type="range" id="progressBar" value="0" step="0.1">
+        </div>
+        <p class="song-title">🎵 Penjaga Hati - Nadhif Basalamah 🎵</p>
+        
+        <audio id="birthdaySong" src="images/penjaga-hati.mp3" loop></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
